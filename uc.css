@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
+
+h1{
+    font-family: 'JetBrains Mono';
+    color:#dee2e6;
+    padding:4%;
+    margin:0px;
+    text-align: center;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(45deg,#212529, #343a40);
+    box-sizing:border-box;
+}
+
+p{
+    font-family: 'JetBrains Mono';
+    color:#dee2e6;
+    text-align: center;
+}
+
+a{
+    font-family: 'JetBrains Mono';
+    font-size: large;
+    text-align: center;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    position: absolute;
+    left:37%;
+    
+}
+
+a:link{
+    color:#dee2e6;
+}
+
+a:visited{
+    color:#dee2e6;
+}
+
+a:hover {
+    color:#212529;
+}
