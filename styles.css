@@ -1,10 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;600;800&display=swap');
 
 header {
     width:100%;
     height: 4%;
-
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 
@@ -28,11 +30,10 @@ body{
 }
 
 a{
-    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
     text-decoration: none;
     padding: 3.5%;
     height:50px;
-    border-radius: 50px;
 }
 
 a:link{
@@ -44,26 +45,39 @@ a:visited{
 }
 
 a:hover {
-    color:#dee2e6;
-    background-color: #262a2f;
-    border-radius: 50px;
+    color:#a47ade;
+
 }
 
+.titlebox{
+    position:absolute;
+    width:100%;
+    height:15%;
+    font-family: 'JetBrains Mono';
+    text-align:center;
+    top:15vh;
+    font-size: large;
+}
 
 .maintitle{
     position:absolute;
     width:100%;
     font-family: 'JetBrains Mono';
-    background-color: #dee2e6;
-    background: linear-gradient(240deg,#632980, #8053c0);
+    background: linear-gradient(240deg,#7e17b1, #c38b31);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     text-align:center;
-    top:5vh;
-    font-size: large;
-   
+    font-size: xx-large;
+}
+
+.subtitle{
+    color:#dee2e6;
+    width: 100%;
+    margin-top: 10vh;
+    font-size: medium;
+
 }
 
 .about{
@@ -71,9 +85,8 @@ a:hover {
     width:100%;
     font-family: 'JetBrains Mono';
     color: #dee2e6;
-    top:15vh;
     margin-left: 3%;
-
+    margin-top: 2%;
     text-align: center;
 }
 
@@ -85,10 +98,20 @@ a:hover {
 .introbg{
     position: absolute;
     background-color: #262a2f;
-    width:90%;
-    height:50%;
-    border-radius: 20px;
-    top:15%;
-    left:5%;
+    width:70%;
+    height:20%;
+    border-radius: 8px;
+    top:33%;
+    right:5%;
     
+}
+
+.profile{
+    position: absolute;
+    display:block;
+    border-radius: 100%;
+    height:15%;
+    width:auto;
+    top:33%;
+    left:5%;
 }
