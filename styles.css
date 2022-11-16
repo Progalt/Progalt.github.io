@@ -46,7 +46,6 @@ a:visited{
 
 a:hover {
     color:#a47ade;
-
 }
 
 .titlebox{
@@ -91,18 +90,20 @@ a:hover {
 }
 
 .aboutp{
-    margin-left: 2%;
+    margin-left: 25%;
     margin-right:10%;
 }
 
 .introbg{
     position: absolute;
     background-color: #262a2f;
-    width:70%;
+    width:40em;
     height:20%;
-    border-radius: 8px;
+    border-radius: 16px;
     top:33%;
-    right:5%;
+    left:50%;
+    margin-left: -20em;
+   
     
 }
 
@@ -110,8 +111,8 @@ a:hover {
     position: absolute;
     display:block;
     border-radius: 100%;
-    height:15%;
+    height:75%;
     width:auto;
-    top:33%;
-    left:5%;
+    top:12.5%;
+    left: 2%;
 }
