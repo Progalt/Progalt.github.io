@@ -1,23 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&display=swap');
+
+img {
+    image-rendering: pixelated;
+  }
 
 body{
     margin:0;
+    background-color: #2f2f2f;
 }
 
 
 #bounding
 {
     margin:auto;
-    width:70%;
+    width:80%;
     height:100vh;
-    text-align: center;
+    text-align: left;
     color: #c2c2c2;
-    background-color: #3e291b;
+    background-color: #3e3e3e;
+    box-shadow: 0px 0px 50px rgb(38, 38, 38);
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif, Arial;
+    font-size: xx-large;
 }
 
 #navlinks{
     padding-top: 1em;
     font-size: x-large;
     text-decoration: none;
+    text-align: center;
 }
 
 a{
@@ -27,8 +42,22 @@ a{
 }
 
 a:hover{
-    color:rgb(255, 81, 81);
+    color:rgb(33, 33, 33);
 }
 
 #about{
+    margin:3em;
+}
+
+pre{
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 2px 2px 10px #3a3a3a;
+}
+
+.footer{
+    position: absolute;
+    bottom:0;
+    margin-left:2em;
+    color: #676767;
 }
