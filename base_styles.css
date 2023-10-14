@@ -1,0 +1,60 @@
+
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+html { 
+    overflow-y: scroll; 
+    cursor: default; 
+    scrollbar-width: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+#header {
+    padding-top: 20vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#baseContainter {
+    background-color: rgb(233, 232, 232);
+    background-image: linear-gradient(rgb(240, 215, 215), rgb(217, 215, 240));
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.postlist {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.post {
+    border-radius: 25px;
+    width: 100%;
+    height: 7em;
+    background-color: rgb(235, 235, 235);
+    margin-top: 1em;
+    transition: 0.25s;
+    filter: drop-shadow(4px 4px 7px rgb(136, 153, 185));
+}
+
+.post:hover {
+    transform: scale(1.05);
+    cursor:pointer;
+}
+
+.footer {
+    height: 3em;
+}
+

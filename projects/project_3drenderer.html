@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Henry</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="../base_styles.css">
+    <link rel="stylesheet" href="project_styles.css">
+
+</head>
+
+<body>
+    <div id="baseContainter">
+       
+        <div id="header">
+            <span class="material-symbols-outlined back_arrow" onclick="javascript:location.href='../index.html'">
+                arrow_back
+            </span>
+            <h1 class="projectHeader">3D Rendering Engine</h1>
+        </div>
+        <div id="subheader">
+            <h2>A valuable experience in not only 3D techniques but also optimisation and more</h2>
+            
+            <p>I had the goal of producing a testbed for some modern 3D rendering techinques and also
+                learn more about the Vulkan API and how it interacts with the GPU.
+            </p>
+
+            <p>
+                I took a barebones window created using SDL2, to an advanced 3D scene. <br> 
+                
+            </p>
+
+            <p>Notable Features: </p>
+
+            <ul>
+                <li>Deferred Rendering</li>
+                <li>Physically Based Material Rendering</li>
+                <li>Cascaded Shadow Maps</li>
+                <li>Diffuse Irradiance using Scene</li>
+                <li> Post Process Stack: 
+                    <ul>
+                        <li>FXAA</li>
+                        <li>Fog</li>
+                        <li>Temporal Anti Aliasing</li>
+                        <li>Chromatic Aberration</li>
+                    </ul>
+                </li>
+                <li>Bloom - Using a downsampling approach for physically accurate results</li>
+                <li>SSAO implemented through the FidelityFX CACAO</li>
+                <li>CPU Frustum Culling</li>
+                <li>A Scene and Component System</li>
+                <li>Custom binary model format</li>
+                <li>Physically based sky (no clouds though)</li>
+            </ul>
+            
+            <img src="../assets/UpdateSceneView.png" style="width: 80vw; object-fit: cover; border-radius: 25px;" alt="Sponza Scene being rendered">
+            <p>Here is the well known sponza scene rendered in engine.</p>
+
+            <hr>
+            <h3>Related Posts</h3>
+            <ul class="postlist">
+                <div class="post" onclick="javascript:location.href='../stub.html'">
+                </div>
+            </ul>
+
+        </div>
+       
+    </div>
+</body>

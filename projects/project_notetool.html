@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Henry</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="../base_styles.css">
+    <link rel="stylesheet" href="project_styles.css">
+
+</head>
+
+<body>
+    <div id="baseContainter">
+       
+        <div id="header">
+            <span class="material-symbols-outlined back_arrow" onclick="javascript:location.href='../index.html'">
+                arrow_back
+            </span>
+            <h1 class="projectHeader">Note Tool</h1>
+        </div>
+        <div id="subheader">
+            <h2>A personal challenge project to design a UI system and more</h2>
+            <h3> - The beginnings</h3>
+            <p>
+                During the summer between my first and second year at University. I was a bit bored. 
+                So I decided to try something I had wanted to try for a while. Writing a tool instead of 
+                something video game based. I thought this would be valuable experience in making an application 
+                that wasn't bound by video game performance concerns. I had been craving a different sort of challenge 
+                for most of my first year of University, which was mostly basic projects in python. 
+            </p>
+
+            <p>
+                I had grown a bit of a fascination with note tools like Obsidian, or Notion. So I decided to make a 
+                note taking tool. I had about a month before University started back up, so that was the time frame. 
+                An ambitious one, but I believed I could get something working in that time. 
+            </p>
+
+            <p>
+                I chose to do it in C++, and without a UI library like Qt, I would write the UI from scratch. 
+                Would I do this for a proper project I would ship? No. Most UI libraries now are perfomant and well tested. 
+                That is unless I wanted to dedicate a significant portion of time to developing a well planned out and tested 
+                UI library. And that wasn't fully viable with the month or so I had. 
+            </p>
+
+            <p>
+                With starting from the very little basic framework I had the first thing I needed to do was to get vertices on screen.
+                Luckily I have experience with OpenGL, <i>Which is what I chose due to the time constraints</i>, and getting some batched 
+                vertices with textures on screen wasn't difficult. <b><i>Then began the making of the UI...</i></b>
+            </p>
+
+            <h3> - Font Rendering</h3>
+
+            <p>
+                Font Rendering was something I had limited experience with in the past, which I suppose makes this project 
+                a good choice for font rendering. Now I didn't want to use a bitmap font, so that leaves me with 
+                <code>.ttf</code> or <code>.otf</code> fonts. FreeType was the library I chose to do the font rasterisation, 
+                ttf parsing and rasterisation was far beyond the scope of the project. 
+
+            </p>
+
+            <hr>
+            <h3>Related Posts</h3>
+            <ul class="postlist">
+                <div class="post">
+                    
+                </div>
+                <div class="post">
+                    
+                </div>
+            </ul>
+
+        </div>
+       
+    </div>
+</body>
