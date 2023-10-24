@@ -42,3 +42,20 @@ html { overflow-y: scroll; }
     cursor:pointer;
 }
 
+.viewProject {
+    height: 3em;
+    width: 10em;
+    border-radius: 25px;
+    background-color: rgb(235, 235, 235);
+    transition: 0.2s;
+    filter: drop-shadow(4px 4px 7px rgb(136, 153, 185));
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.viewProject:hover {
+    transform: scale(1.05);
+    cursor:pointer;
+}
