@@ -40,6 +40,7 @@
     padding-left: 1.25em;
     padding-right: 1.25em;
     border-radius: 25px;
+   
 }
 
 .about button:hover {
@@ -57,7 +58,7 @@ svg {
     margin-top: -1.5em;
     margin-left: -0.5em;
     color:var(--subtext-col);
-    transition: 0.5s;
+    transition: 0.25s;
     transform: scale(0.4);
 }
 
@@ -216,31 +217,4 @@ h3 {
 
 .basepage {
     height: 100vh;
-}
-
-.window  {
-    margin: var(--project-margin);
-    filter: drop-shadow(5px 5px 6px #9c9c9c);
-    border-style: solid;
-    border-width: 1px;
-    border-color: #273138;
-    border-radius: 11px;
-}
-
-.window-bar {
-    background: #273138;
-    background-image: linear-gradient(90deg, #273138, #343f47);
-    padding: 10px;
-    border-radius: 9px 9px 0px 0px;
-
-   
-}
-
-.dot {
-    background: #4a5c66;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 0 4px 0 0;
 }
