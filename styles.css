@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap');
 
+:root {
+    --project-margin: 1.5em;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -11,23 +14,55 @@
 }
 
 
-#about {
+.about {
     margin-top: -1em;
     padding-left: 10%;
     padding-right: 10%;
     border-radius: 15px;
-    color:rgb(61, 61, 61);
+    font-size: 18px;
+    color: var(--subtext-col);
+}
+
+.about h2 {
+    color: rgb(154, 58, 218);
+}
+
+.about button {
+    background-image: linear-gradient(60deg, var(--emphasisbox-grad-top), var(--emphasisbox-grad-bottom));
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Inter var';
+    font-weight: bold;
+    margin-right: 0.5em;
+    transition: 0.25s;
+    padding: 0.35em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    border-radius: 25px;
+}
+
+.about button:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+#navbuttons {
+    margin-top: 1em;
+    height: 2.5em;
+    display:inline-flex;
 }
 
 svg {
-    color:rgb(61, 61, 61);;
+    margin-top: -1.5em;
+    margin-left: -0.5em;
+    color:var(--subtext-col);
     transition: 0.5s;
     transform: scale(0.4);
 }
 
 svg:hover {
     transform: scale(0.45);
-    color:rgb(61, 61, 61);;
 }
 
 h3 {
@@ -35,20 +70,10 @@ h3 {
     padding: 0;
 }
 
-#contact{
-    width: 5em;
-    text-align: center;
-    color:blueviolet;
-    transition: 0.1s;
-}
-
-#contact:hover {
-    color: rgb(173, 110, 231);
-}
 
 .projects {
     margin-top: 5em;
-    color:rgb(61, 61, 61);
+    color:var(--subtext-col);
     margin: auto;
     justify-content: center;
  }
@@ -60,15 +85,14 @@ h3 {
     height: 20vh;
     margin-bottom: 1em;
     border-radius: 25px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(185, 185, 185, 0.521);
     background-image: linear-gradient(90deg, rgb(207, 191, 235), rgb(238, 210, 234));
     transition: 0.25s;
     color:white;
     padding: 0.5em;
     display: flex;
 }
+
+
     
 .projectInfo {
     width:100%;
@@ -147,16 +171,15 @@ h3 {
     cursor: pointer;
 }
 
-.projectsbox {
-    margin: 1.5em;
-    margin-top: 6em;
+#projectsbox {
+    margin-top: 0;
     padding-top: 4em;
     padding-bottom: 4em;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: rgb(200, 193, 240);
-    background-image: linear-gradient(rgb(204, 170, 224), rgb(162, 133, 216));
-    border-radius: 25px;
+    background-color: var( --emphasisbox-grad-top);
+    background-image: linear-gradient(var(--emphasisbox-grad-top), var( --emphasisbox-grad-bottom));
+    border-radius: 0px 0px 9px 9px;
 }
 
 .projectsbox h3 {
@@ -164,7 +187,7 @@ h3 {
     font-size: 28px;
 }
 
-.postbox {
+#postbox {
     margin-top: 6em;
     padding-left: 10%;
     padding-right: 10%;
@@ -183,10 +206,41 @@ h3 {
 
 .taglist li {
     background-color: rgb(204, 170, 224);
-    color: rgb(61, 61, 61);
+    color: var(--subtext-col);
     border-radius: 5px;
     display: inline;
     padding: 0.3em;
     padding-left: 0.5em;
     padding-right: 0.5em;
+}
+
+.basepage {
+    height: 100vh;
+}
+
+.window  {
+    margin: var(--project-margin);
+    filter: drop-shadow(5px 5px 6px #9c9c9c);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #273138;
+    border-radius: 11px;
+}
+
+.window-bar {
+    background: #273138;
+    background-image: linear-gradient(90deg, #273138, #343f47);
+    padding: 10px;
+    border-radius: 9px 9px 0px 0px;
+
+   
+}
+
+.dot {
+    background: #4a5c66;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px 0 0;
 }

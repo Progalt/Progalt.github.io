@@ -11,12 +11,15 @@
 
     --drop-shadow-col: rgb(136, 153, 185);
 
+    --subtext-col: rgb(61, 61, 61);
+
+    --emphasisbox-grad-top: rgb(204, 170, 224);
+    --emphasisbox-grad-bottom: rgb(162, 133, 216);
+
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
-
-
 html { 
     overflow-y: scroll; 
     cursor: default; 
@@ -65,7 +68,7 @@ h1 {
 }
 
 .post:hover {
-    transform: scale(1.05);
+    transform: translateX(1em);
     cursor:pointer;
 }
 
@@ -73,3 +76,30 @@ h1 {
     height: 3em;
 }
 
+
+.window  {
+    margin: var(--project-margin);
+    filter: drop-shadow(5px 5px 6px #9c9c9c);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #273138;
+    border-radius: 11px;
+}
+
+.window-bar {
+    background: #273138;
+    background-image: linear-gradient(90deg, #273138, #343f47);
+    padding: 10px;
+    border-radius: 9px 9px 0px 0px;
+
+   
+}
+
+.dot {
+    background: #4a5c66;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px 0 0;
+}
