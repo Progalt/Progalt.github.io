@@ -2,19 +2,19 @@
 :root { 
     font-family: 'Inter', sans-serif;
     
-    --top-grad-bg:rgb(240, 215, 215);
-    --bottom-grad-bg: rgb(217, 215, 240);
+    --top-grad-bg:rgb(39, 38, 46);
+    --bottom-grad-bg: rgb(39, 38, 46);
 
-    --title-text-col: rgb(0, 0, 0);
+    --title-text-col: rgb(236, 236, 236);
 
     --post-bg: rgb(235, 235, 235);
 
     --drop-shadow-col: rgb(136, 153, 185);
 
-    --subtext-col: rgb(61, 61, 61);
+    --subtext-col: rgb(167, 167, 167);
 
     --emphasisbox-grad-top: rgb(204, 170, 224);
-    --emphasisbox-grad-bottom: rgb(162, 133, 216);
+    --emphasisbox-grad-bottom: rgb(172, 117, 204);
 
 }
 @supports (font-variation-settings: normal) {
@@ -37,11 +37,6 @@ h1 {
     
 }
 
-#header {
-    padding-top: 20vh;
-    padding-left: 10%;
-    padding-right: 10%;
-}
 
 #baseContainter {
     background-color: rgb(233, 232, 232);
