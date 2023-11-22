@@ -2,9 +2,9 @@
 
 function scrollToProjects()
 {
-    elements = document.getElementsByClassName("window")
+    const element = document.getElementById("projectsbox")
 
-    elements[0].scrollIntoView({
+    element.scrollIntoView({
         behavior: 'smooth'
     })
 }

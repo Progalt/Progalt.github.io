@@ -2,7 +2,7 @@
 :root { 
     font-family: 'Inter', sans-serif;
     
-    --top-grad-bg:rgb(39, 38, 46);
+    --top-grad-bg:rgb(32, 32, 36);
     --bottom-grad-bg: rgb(39, 38, 46);
 
     --title-text-col: rgb(236, 236, 236);
@@ -16,10 +16,25 @@
     --emphasisbox-grad-top: rgb(204, 170, 224);
     --emphasisbox-grad-bottom: rgb(172, 117, 204);
 
+    --side-padding: 10vw;
+
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
+
+@media only screen and (min-width: 1280px) {
+    :root { 
+        --side-padding: 20vw;
+    }
+}
+
+@media only screen and (min-width: 1980px) {
+    :root { 
+        --side-padding: 25vw;
+    }
+}
+
 html { 
     overflow-y: scroll; 
     cursor: default; 
@@ -40,7 +55,7 @@ h1 {
 
 #baseContainter {
     background-color: rgb(233, 232, 232);
-    background-image: linear-gradient(var(--top-grad-bg), var(--bottom-grad-bg));
+    background-image: linear-gradient(var(--top-grad-bg), var(--top-grad-bg));
     height: 100%;
     width: 100%;
     margin: auto;
